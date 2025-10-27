@@ -37,6 +37,9 @@ a {
   background: #2b63d9;
   position: relative;
 }
+.tablet-hero-img {
+  display: none;
+}
 .mobile-hero-img {
   position: absolute;
   top: 0px;
@@ -98,7 +101,6 @@ a {
 .support-icon img {
   width: 100%;
   height: auto;
-  filter: brightness(0) invert(1);
 }
 .message-section {
   padding: 32px 16px;
@@ -600,5 +602,74 @@ a {
   img {
     width: 24px;
     height: 24px;
+  }
+}
+/* TABLET */
+@media (width > 768px) {
+  .container {
+    max-width: 768px;
+  }
+  .hero-section {
+    max-width: 768px;
+    align-items: center;
+    padding: 64px 32px;
+    gap: 48px;
+  }
+  .tablet-hero-img {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+  .mobile-hero-img {
+    display: none;
+  }
+  .hero-content {
+    margin-top: 600px;
+    h1 {
+      font-weight: 700;
+      font-size: 52px;
+      line-height: 60px;
+      letter-spacing: -1%;
+    }
+    p {
+      margin-bottom: 8px;
+    }
+    a {
+      width: fit-content;
+      padding: 12px 18px;
+      margin-bottom: 80px;
+    }
+  }
+  .support-icon {
+    display: flex;
+    padding: 0;
+    gap: 10px;
+    img {
+      max-width: 112px;
+    }
+  }
+  .message-section {
+    padding: 40px 32px;
+    h2 {
+      font-size: 32px;
+      line-height: 40px;
+    }
+  }
+  .message-cards {
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 32px;
+    row-gap: 48px;
+  }
+  .message-card {
+    gap: 16px;
+    img {
+      margin-bottom: 20px;
+    }
+    h3 {
+      font-size: 22px;
+      line-height: 30px;
+      letter-spacing: -1%;
+    }
   }
 }
