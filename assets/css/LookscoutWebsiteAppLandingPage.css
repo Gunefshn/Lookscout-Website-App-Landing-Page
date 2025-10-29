@@ -982,6 +982,72 @@ a {
       margin-bottom: 0;
     }
   }
+  .features-section-dark {
+    padding: 60px 80px;
+    background: #151b28;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    gap: 60px;
+  }
+
+  .features-main-image {
+    width: 50%;
+    max-width: 600px;
+    height: auto;
+    flex-shrink: 0;
+  }
+
+  .features-cards-dark {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    flex: 1;
+  }
+
+  .features-card-dark {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    position: relative;
+
+    img {
+      width: 48px;
+      height: 48px;
+      margin-bottom: 8px;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+
+    h4 {
+      font-weight: 600;
+      font-size: 20px;
+      line-height: 28px;
+      letter-spacing: -0.02em;
+      color: #f9f9f9;
+      margin-left: 64px;
+    }
+
+    p {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 24px;
+      letter-spacing: -0.1px;
+      color: #a5acba;
+      text-align: start;
+      margin-bottom: 8px;
+      margin-left: 64px;
+    }
+
+    a {
+      font-weight: 600;
+      font-size: 15px;
+      line-height: 22px;
+      color: #437ef7;
+      margin-left: 64px;
+    }
+  }
   .testimonial-section {
     padding-block: 64px;
     display: flex;
