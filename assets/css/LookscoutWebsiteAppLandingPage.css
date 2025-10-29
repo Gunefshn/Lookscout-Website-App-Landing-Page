@@ -236,6 +236,11 @@ a {
   padding: 32px 16px;
   background: #151b28;
 }
+.features-main-image {
+  width: 100%;
+  height: auto;
+  margin-bottom: 32px;
+}
 .features-cards-dark {
   display: flex;
   flex-direction: column;
@@ -622,7 +627,7 @@ a {
   }
 }
 /* TABLET */
-@media (min-width: 768px) {
+@media (width >=768px) {
   .container {
     max-width: 768px;
   }
@@ -857,5 +862,244 @@ a {
       gap: 24px;
       align-self: last baseline;
     }
+  }
+}
+@media (width >= 1024px) {
+  .container {
+    max-width: 1440px;
+  }
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    .desktop-header {
+      display: block;
+    }
+    .menu-icon {
+      display: none;
+    }
+  }
+  .navlinks {
+    display: flex;
+    gap: 32px;
+    align-items: center;
+    img {
+      margin-right: 32px;
+    }
+  }
+  .auth-buttons {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+  }
+  .auth-buttons a:nth-child(2) {
+    padding: 12px 18px;
+    border-radius: 6px;
+    background-color: #437ef7;
+  }
+  .hero-section {
+    max-width: 1440px;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+    padding: 64px 80px;
+    gap: 108px;
+  }
+
+  .tablet-hero-img {
+    position: static;
+    max-width: 560px;
+    height: auto;
+  }
+
+  .hero-content {
+    max-width: 624px;
+    margin-top: 0;
+  }
+
+  .hero-content h1 {
+    font-weight: 700;
+    font-size: 52px;
+    line-height: 60px;
+    letter-spacing: -1px;
+  }
+
+  .hero-content p {
+    font-size: 18px;
+    line-height: 26px;
+  }
+
+  .hero-content > a {
+    width: fit-content;
+  }
+
+  .support-icon {
+    display: flex;
+    padding: 0;
+    gap: 32px;
+  }
+  .message-section {
+    padding-block: 64px;
+  }
+  .message-cards {
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 64px;
+  }
+  .features-section {
+    padding-block: 64px;
+    p {
+      margin-bottom: 64px;
+    }
+  }
+
+  .features-section-desktop-img {
+    display: block;
+    max-width: 560px;
+    height: auto;
+  }
+
+  .features-section-mobile-img,
+  .featured-section-tablet-img {
+    display: none;
+  }
+
+  .features-cards {
+    display: grid;
+    grid-template-columns: 1fr 560px;
+    align-items: start;
+  }
+
+  .features-section-desktop-img {
+    grid-row: 1 / 4;
+    grid-column: 2 / 3;
+  }
+
+  .features-card {
+    grid-column: 1 / 2;
+    p {
+      margin-bottom: 0;
+    }
+  }
+  .testimonial-section {
+    padding-block: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .customer-content {
+    display: none;
+  }
+
+  .ceo-content {
+    max-width: 1216px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+    padding-inline: 132px;
+    background: #f8f9fb;
+    border-radius: 10px;
+  }
+  .blog-section {
+    padding-block: 64px;
+  }
+  .blog-cards {
+    max-width: 1280px;
+    margin: 0 auto;
+    display: flex;
+    gap: 32px;
+    justify-content: center;
+  }
+
+  .third-card {
+    display: block;
+  }
+  .blog-card {
+    flex: 1;
+    max-width: 384px;
+
+    img {
+      width: 100%;
+      height: auto;
+      margin-bottom: 24px;
+      border-radius: 8px;
+    }
+  }
+  .proud-section {
+    padding-block: 64px;
+  }
+  .prouds-logo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 64px;
+    grid-template-columns: unset;
+  }
+
+  .prouds-logo > *:nth-last-child(-n + 2) {
+    grid-column: unset;
+  }
+
+  .prouds-logo > *:nth-child(5) {
+    grid-column: unset;
+  }
+
+  .prouds-logo > *:nth-child(6) {
+    grid-column: unset;
+  }
+  .cta-section {
+    padding-block: 64px;
+    max-width: 1280px;
+    margin: 0 auto;
+  }
+  .cta-section h2 {
+    max-width: 752px;
+  }
+
+  .email-input {
+    display: block;
+    max-width: 752px;
+    height: auto;
+    margin-bottom: 24px;
+  }
+
+  .mobile-email-input {
+    display: none;
+  }
+
+  .cta-section .mobile-btn {
+    display: none;
+  }
+  .footer {
+    padding-block: 64px;
+    gap: 48px;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-areas:
+      "tagline footer-columns email-section"
+      "footer-bottom footer-bottom footer-bottom";
+  }
+
+  .footer .tagline {
+    grid-area: tagline;
+  }
+
+  .footer-columns {
+    grid-area: footer-columns;
+    display: flex;
+    gap: 48px;
+  }
+
+  .email-section {
+    grid-area: email-section;
+  }
+
+  .footer-bottom {
+    grid-area: footer-bottom;
+    padding-top: 32px;
   }
 }
